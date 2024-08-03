@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice débutant html 1</title>
+  </head>
+  <body>
+    <section>
+      <h1>Exercice débutant html</h1>
+      <p>Ceci est un exercice débutant en HTML.</p>
+    </section>
+    <section>
+      <form action="formulaire">
+        <ul>
+          <li>
+            <label for="nom">Nom</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Dupont"
+              required
+            />
+          </li>
+          <li>
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="dupont@gmail.com"
+              required
+            />
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Bonjour, je suis un message"
+              required
+            ></textarea>
+          </li>
+          <li>
+            <label for="pays-select">Choisir une nationalité</label>
+            <select name="pays" id="pays-select" required>
+              <option value="France">France</option>
+              <option value="Allemagne">Allemagne</option>
+              <option value="Belgique">Belgique</option>
+              <option value="Italie">Italie</option>
+              <option value="Espagne">Espagne</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Autres">Autres</option>
+            </select>
+          </li>
+          <li>
+            <label for="cgu">Accepter les CGU</label>
+            <input type="checkbox" id="cgu" name="cgu" required />
+            <input type="submit" value="Envoyer" />
+          </li>
+        </ul>
+      </form>
+    </section>
+  </body>
+</html>
